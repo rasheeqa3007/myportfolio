@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glowChip" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="#050814" />
+  
+  <!-- Circuit Traces -->
+  <g opacity="0.4" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 80 H180 V140 H220" />
+    <circle cx="80" cy="80" r="4" fill="#10b981" />
+    <path d="M80 280 H160 V220 H220" />
+    <circle cx="80" cy="280" r="4" fill="#10b981" />
+    <path d="M520 80 H420 V140 H380" />
+    <circle cx="520" cy="80" r="4" fill="#10b981" />
+    <path d="M520 280 H440 V220 H380" />
+    <circle cx="520" cy="280" r="4" fill="#10b981" />
+  </g>
+  
+  <!-- VC02 Board Outline -->
+  <rect x="200" y="80" width="200" height="180" rx="14" fill="#091b24" stroke="url(#neonGreen)" stroke-width="2.5" filter="url(#glowChip)" />
+  
+  <!-- Microcontroller Processor Core -->
+  <rect x="240" y="120" width="120" height="100" rx="8" fill="#04121a" stroke="#38bdf8" stroke-width="2" />
+  <circle cx="300" cy="160" r="18" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 2" />
+  <circle cx="300" cy="160" r="7" fill="#10b981" filter="url(#glowChip)" />
+  <text x="300" y="196" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" text-anchor="middle">VC02 AI DSP</text>
+  
+  <!-- Pin connectors -->
+  <g fill="#38bdf8" opacity="0.8">
+    <circle cx="215" cy="100" r="3" />
+    <circle cx="215" cy="120" r="3" />
+    <circle cx="215" cy="140" r="3" />
+    <circle cx="215" cy="160" r="3" />
+    <circle cx="215" cy="180" r="3" />
+    <circle cx="215" cy="200" r="3" />
+    <circle cx="215" cy="220" r="3" />
+    <circle cx="215" cy="240" r="3" />
+    
+    <circle cx="385" cy="100" r="3" />
+    <circle cx="385" cy="120" r="3" />
+    <circle cx="385" cy="140" r="3" />
+    <circle cx="385" cy="160" r="3" />
+    <circle cx="385" cy="180" r="3" />
+    <circle cx="385" cy="200" r="3" />
+    <circle cx="385" cy="220" r="3" />
+    <circle cx="385" cy="240" r="3" />
+  </g>
+  
+  <!-- Badge -->
+  <rect x="210" y="280" width="180" height="28" rx="14" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1" />
+  <text x="300" y="299" fill="#10b981" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600" text-anchor="middle">OFFLINE EDGE AI VOICE</text>
+</svg>

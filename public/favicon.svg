@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="auroraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#050814" />
+  <circle cx="32" cy="32" r="24" stroke="url(#auroraGrad)" stroke-width="2" stroke-dasharray="4 2" opacity="0.6" />
+  <polygon points="32,12 48,24 48,44 32,54 16,44 16,24" stroke="url(#auroraGrad)" stroke-width="2.5" fill="none" filter="url(#glow)" />
+  <circle cx="32" cy="32" r="6" fill="url(#auroraGrad)" filter="url(#glow)" />
+  <path d="M26 30 L32 23 L38 30 L32 41 Z" fill="#FFFFFF" opacity="0.9" />
+</svg>
